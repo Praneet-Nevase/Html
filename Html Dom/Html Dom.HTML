@@ -1,0 +1,29 @@
+<Html>
+    <head><title>My Zoo</title></head>
+    <body>
+        <H1>My Zoo</H1>
+        <p>Use Javascript and Dom to add each animal in Cage</p>
+        <Div id="zoo">
+            <div class="zone">Zone 1:<span id="zone"></span></div>
+            <div class="zone">Zone 2:<span id="zone1"></span></div>
+            <div class="zone">Zone 3:<span id="zone2"></span></div>
+            <div class="zone">Total Animals:<span id="TOTAL"></span></div>
+        </Div>
+
+        <button onclick="openzoo()">Open Zoo</button>
+        <p id="zoo-status"></p>
+
+        <script>
+            function openzoo()
+            {
+                document.getElementById("zone").innerHTML = " Lion";
+                document.getElementById("zone1").innerHTML = " Tiger";
+                document.getElementById("zone2").innerHTML = " Penguin";
+                document.getElementById("TOTAL").innerHTML = " 3";
+                document.getElementById("zoo-status").innerHTML = document.title + " It is open now";
+                document.getElementById("zoo").style.backgroundColor = "Green"
+                
+            }
+        </script>
+    </body>
+</Html>

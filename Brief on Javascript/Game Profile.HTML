@@ -1,0 +1,68 @@
+<Html>
+    <head>
+        <title>My Game Profile</title>
+    </head>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 30px;
+            background-color: beige;
+        }
+        h1 {color:blue}
+        button {
+            background-color: navy;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        div {
+            border: 1px solid orangered;
+            margin: 6px auto;
+            text-align: left;     
+            width: 280px;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    </style>
+    <body>
+        <H1>My Game Profile</H1>
+        <button onclick="showprofile()">Show Profile</button>
+        <div>Name: <span id="name"></span></div>
+        <div>Score: <span id="score"></span></div>
+        <div>Top Score: <span id="record"></span></div>
+        <div>Rank: <span id="rank"></span></div>
+        <div>Greeting: <span id="greeting"></span></div>
+        <div>Stars: <span id="star"></span></div>
+        <div>Bonus Level: <span id="bonus"></span></div>
+        <div>Team Name: <span id="team"></span></div>
+
+        <script>
+            function showprofile()
+            {
+               let name= "Praneet";
+               let myscore= "75";
+               let highscore="100"
+               let bonus=null;
+               let team = ;
+               
+               let istopper = myscore==highscore
+
+               let rank= ;
+               if (myscore>=80)
+               {
+                rank="Gold"
+               }
+               elif (myscore>=50)
+               {
+                rank="Silver"
+               }
+               else (myscore<50)
+               {
+                rank="bronze"
+               }
+            }
+        </script>
+    </body>
+</Html>

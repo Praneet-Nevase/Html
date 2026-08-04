@@ -1,0 +1,88 @@
+<Html>
+    <head>
+    <title>My Delivery Tracker</title>
+
+    <style>
+        body{
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            background: aliceblue;
+
+            text-align:center;
+
+            padding:30px;
+
+        }
+
+        h1
+
+            {
+
+                color:darkorange
+
+            }
+
+        button
+
+             {
+
+                 background-color: darkorange;
+
+color:white;
+
+padding:10px 25px;
+
+border:none;
+
+border-radius: 20px;
+
+margin: 5px;
+
+}
+div 
+{
+    border: 1px solid salmon;
+    width: 300px;
+    margin: 6px auto;
+    text-align: left;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+    </style>
+    </head>
+
+    <body>
+        <H1>My Delivery Tracker</H1>
+        <button onclick="saveOrder()">Save Order</button>
+        <button onclick="startDelivery()">Start Delivery</button>
+
+        <div>Json Text: <span id = "Json-Text"></span></div>
+        <div>Loaded Item: <span id="Loaded-item"></span></div>
+        <div>Loaded Price: <span id="Loaded-Price"></span></div>
+        <div>Status: <span id="Status"></span></div>
+        <div>Result: <span id="Result"></span></div>
+
+        <script>
+        let order=
+        {
+             item:"pizza",
+             price: 5,
+             shop: "My Snack Shop"  
+        }
+
+        function saveOrder()
+        {
+            let jsontext = JSON.stringify(order);
+            let loadorder = JSON.parse(jsontext);
+
+            document.getElementById("Json-Text").innerHTML=jsontext
+            document.getElementById("Loaded-item").innerHTML = loadorder.item
+            document.getElementById("Loaded-Price").innerHTML = "$" + loadorder.price
+        }
+              
+        
+        </script>
+    </body>
+</Html>

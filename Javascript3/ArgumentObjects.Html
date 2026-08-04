@@ -1,0 +1,24 @@
+<Html>
+    <Head><Title>Javascript Math Objects</Title></Head>
+<body>
+    <p>Finding the largest number with the help of Argument Objects</p>
+    <p id="result"></p>
+    <script>
+        function Findmax()
+        {
+            var i;
+            var max=0;
+
+            for(i=0; i < arguments.length ; i++)
+             {
+                if (arguments[i]>max)
+                 {
+                    max=arguments[i]
+                 }
+             }
+             return max
+        }
+        document.getElementById("result").innerHTML=Findmax(1,3,5,7,9)
+    </script>
+</body>
+</Html>

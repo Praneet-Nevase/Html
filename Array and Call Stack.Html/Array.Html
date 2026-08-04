@@ -1,0 +1,24 @@
+<Html>
+    <Head>
+        <Title>Array</Title>
+    </Head>
+    <body>
+        <h1>Array In Javascript</h1>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="myjoin"></p>
+        <p id="popitem"></p>
+        <script>
+            var fruits = ['Mango','Banana','Grapes','Apple']
+
+            document.getElementById("demo").innerHTML=fruits[2]
+
+            document.getElementById("demo2").innerHTML = fruits[3]
+
+            document.getElementById("myjoin").innerHTML = fruits .join(" & ")
+
+            fruits.pop()
+            document.getElementById("popitem").innerHTML=fruits
+        </script>
+    </body>
+</Html>
